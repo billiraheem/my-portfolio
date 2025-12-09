@@ -1,7 +1,4 @@
 import React, {useState} from "react";
-import GithubIcon from "../../public/github-icon.svg";
-import LinkedinIcon from "../../public/linkedin-icon.svg";
-import EmailIcon from "../../public/email.png";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -52,16 +49,17 @@ export const EmailSection = () => {
         </p>
         <div className="socials flex flex-row gap-2 items-center">
           <Link href="https://github.com/billiraheem">
-            <Image src={GithubIcon} alt="Github Icon" />
+            <Image src="/github-icon.svg" alt="Github Icon" width={45} height={45}/>
           </Link>
           <Link href="https://www.linkedin.com/in/balikis-abdulraheem-2b5641261/">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+            <Image src="/linkedin-icon.svg" alt="Linkedin Icon" width={45} height={45} />
           </Link>
           <Link href="mailto:abdulraheempelumi@gmail.com">
             <Image
-              src={EmailIcon}
+              src="/email.png"
               alt="Email Icon"
-              width={37}
+              width={35}
+              height={35}
               className="rounded-md"
             />
           </Link>
